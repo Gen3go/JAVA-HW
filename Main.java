@@ -5,7 +5,8 @@ public class Main {
     public static void main(String[] args) {
         // FirstTask ();
         // SecondTask();
-        ThirdTask();
+        // ThirdTask();
+        FourthTask();
     }
     // Вычислить n-ое треугольного число (сумма чисел от 1 до n)
     public static void FirstTask (){
@@ -40,7 +41,6 @@ public class Main {
             System.out.println(m);
             }
     }
-    
     // Вывести все простые числа от 1 до 1000
     // (числа, которые делятся только на 1 и на себя без остатка)
     public static void ThirdTask(){
@@ -52,8 +52,28 @@ public class Main {
             n += 1;
         }
     }
-
-
-
-
-}
+    // Реализовать простой калькулятор (введите первое число,
+    // введите второе число, введите требуемую операцию, ответ)
+    public static void FourthTask(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the first number: ");
+        int n = scanner.nextInt();
+        System.out.println("Enter the second number: ");
+        int m = scanner.nextInt();
+        System.out.println("Which operation do you want to do: ");
+        char k = scanner.next().charAt(0);
+        if (k == '+'){
+            System.out.println(m+n);
+            }
+        if (k == '-'){
+            System.out.println(m-n);
+        }
+        if (k == '*'){
+            System.out.println(m*n);
+        }
+        if (k == '/'){
+            System.out.println(m/n);
+        }
+        }
+        
+    }
