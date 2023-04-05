@@ -24,15 +24,16 @@ public class Main2 {
         return arr;
     }
 
-    static List<Integer> sortArray(List<Integer> arr) {
+    static List<Integer> sortArray (List<Integer> arr) {
         List<Integer> arr2 = new ArrayList<>();
         for (int i = 0; i < arr.size(); i++) {
-            if (arr[i] % 2 == 0) {
-                arr2.add(arr[i]);
+            if (arr.get(i) % 2 == 0) {
+                arr2.add(arr.get(i));
             }
             System.out.println(arr2);
         }
-
+        return arr2;
+     
     }
 
 }
